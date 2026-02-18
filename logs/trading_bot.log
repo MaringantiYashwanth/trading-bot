@@ -1,0 +1,59 @@
+2026-02-17 18:10:01,046 | INFO | bot.client | Binance client initialized. testnet=True
+2026-02-17 18:10:01,047 | INFO | bot.orders | Order request type=MARKET symbol=BTCUSDT side=BUY quantity=0.01
+2026-02-17 18:10:01,048 | INFO | bot.client | Placing market order payload={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-02-17 18:10:02,770 | INFO | bot.client | Market order success response={'order_id': 12338921408, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'origQty': '0.010', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-17 18:10:02,771 | INFO | bot.orders | Order response type=MARKET response={'order_id': 12338921408, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'origQty': '0.010', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-17 18:10:02,773 | INFO | __main__ | CLI order result={'order_id': 12338921408, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'origQty': '0.010', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-17 18:10:05,334 | INFO | bot.client | Binance client initialized. testnet=True
+2026-02-17 18:10:05,335 | INFO | bot.orders | Order request type=LIMIT symbol=BTCUSDT side=SELL quantity=0.01 price=50000.0
+2026-02-17 18:10:05,336 | INFO | bot.client | Placing limit order payload={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 0.01, 'price': 50000.0}
+2026-02-17 18:10:06,315 | ERROR | bot.client | Binance order error: APIError(code=-4024): Limit price can't be lower than 64747.88.
+2026-02-17 18:10:06,316 | INFO | bot.orders | Order response type=LIMIT response=None
+2026-02-17 18:10:06,316 | INFO | __main__ | CLI order result=None
+2026-02-18 07:27:10,935 | INFO | bot.client | Binance client initialized. testnet=True
+2026-02-18 07:27:10,948 | INFO | bot.orders | Order request type=LIMIT symbol=BTCUSDT side=BUY quantity=0.001 price=65000.0
+2026-02-18 07:27:10,948 | ERROR | bot.client | Unexpected limit order error: 'BinanceClient' object has no attribute '_normalize_side'
+Traceback (most recent call last):
+  File "C:\Users\YASHWANTH\Documents\python\trading_bot\bot\client.py", line 82, in place_limit_order
+    "side": self._normalize_side(side),
+            ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BinanceClient' object has no attribute '_normalize_side'
+2026-02-18 07:27:10,951 | INFO | bot.orders | Order response type=LIMIT response=None
+2026-02-18 07:27:10,952 | INFO | __main__ | CLI order result=None
+2026-02-18 07:29:28,452 | INFO | bot.client | Binance client initialized. testnet=True
+2026-02-18 07:29:28,452 | INFO | bot.orders | Order request type=LIMIT symbol=BTCUSDT side=BUY quantity=0.001 price=65000.0
+2026-02-18 07:29:28,453 | INFO | bot.client | Placing limit order payload={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 0.001, 'price': 65000.0}
+2026-02-18 07:29:34,273 | ERROR | bot.client | Binance order error: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-18 07:29:34,273 | INFO | bot.orders | Order response type=LIMIT response=None
+2026-02-18 07:29:34,273 | INFO | __main__ | CLI order result=None
+2026-02-18 07:30:22,592 | INFO | bot.client | Binance client initialized. testnet=True
+2026-02-18 07:30:22,593 | INFO | bot.orders | Order request type=LIMIT symbol=BTCUSDT side=BUY quantity=0.001 price=70000.0
+2026-02-18 07:30:22,593 | INFO | bot.client | Placing limit order payload={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 0.001, 'price': 70000.0}
+2026-02-18 07:30:23,365 | ERROR | bot.client | Binance order error: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-18 07:30:23,365 | INFO | bot.orders | Order response type=LIMIT response=None
+2026-02-18 07:30:23,366 | INFO | __main__ | CLI order result=None
+2026-02-18 07:33:06,504 | INFO | bot.client | Binance client initialized. testnet=True
+2026-02-18 07:33:06,505 | INFO | bot.orders | Order request type=LIMIT symbol=BTCUSDT side=BUY quantity=0.002 price=65000.0
+2026-02-18 07:33:06,505 | INFO | bot.client | Placing limit order payload={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 0.002, 'price': 65000.0}
+2026-02-18 07:33:07,406 | INFO | bot.client | Limit order success response={'order_id': 12353220163, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:33:07,407 | INFO | bot.orders | Order response type=LIMIT response={'order_id': 12353220163, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:33:07,407 | INFO | __main__ | CLI order result={'order_id': 12353220163, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:37:45,181 | INFO | bot.client | Binance client initialized. testnet=True
+2026-02-18 07:37:45,182 | INFO | bot.orders | Order request type=LIMIT symbol=BTCUSDT side=BUY quantity=0.002 price=67196.0
+2026-02-18 07:37:45,182 | INFO | bot.client | Placing limit order payload={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': 0.002, 'price': 67196.0}
+2026-02-18 07:37:46,582 | INFO | bot.client | Limit order success response={'order_id': 12353301544, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:37:46,582 | INFO | bot.orders | Order response type=LIMIT response={'order_id': 12353301544, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:37:46,583 | INFO | __main__ | CLI order result={'order_id': 12353301544, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:41:46,576 | INFO | bot.client | Binance client initialized. testnet=True
+2026-02-18 07:41:46,577 | INFO | bot.orders | Order request type=MARKET symbol=BTCUSDT side=BUY quantity=0.002
+2026-02-18 07:41:46,578 | INFO | bot.client | Placing market order payload={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-02-18 07:41:47,516 | INFO | bot.client | Market order success response={'order_id': 12353374225, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:41:47,517 | INFO | bot.orders | Order response type=MARKET response={'order_id': 12353374225, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:41:47,517 | INFO | __main__ | CLI order result={'order_id': 12353374225, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:42:12,434 | INFO | bot.client | Binance client initialized. testnet=True
+2026-02-18 07:42:12,434 | INFO | bot.orders | Order request type=MARKET symbol=BTCUSDT side=BUY quantity=0.002
+2026-02-18 07:42:12,435 | INFO | bot.client | Placing market order payload={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-02-18 07:42:13,961 | INFO | bot.client | Market order success response={'order_id': 12353382712, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:42:13,961 | INFO | bot.orders | Order response type=MARKET response={'order_id': 12353382712, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:42:13,962 | INFO | __main__ | CLI order result={'order_id': 12353382712, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'status': 'NEW', 'origQty': '0.002', 'executedQty': '0.000', 'avgPrice': '0.00'}
+2026-02-18 07:47:21,268 | INFO | __main__ | Dry-run enabled. payload={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'timeInForce': 'GTC', 'price': 50000.0}
